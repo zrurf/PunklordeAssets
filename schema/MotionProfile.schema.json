@@ -1,0 +1,58 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "punklorde:schema:motion_profile",
+    "title": "Motion Profile",
+    "description": "用于运动模拟的运动数据文件",
+    "type": "object",
+    "properties": {
+        "id": {
+            "description": "运动文件的唯一ID",
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_:@-]+$"
+        },
+        "version": {
+            "description": "运动文件的版本",
+            "type": "integer"
+        },
+        "author": {
+            "description": "作者",
+            "type": "string"
+        },
+        "name": {
+            "description": "显示的运动文件的名称",
+            "type": "string"
+        },
+        "description": {
+            "description": "运动文件的描述",
+            "type": "string"
+        },
+        "repo": {
+            "type": "array",
+            "description": "查找轨迹文件的链接",
+            "items": {
+                "type": "string",
+                "pattern": "^[a-zA-Z]+://[^\\s]+$"
+            }
+        },
+        "data": {
+            "description": "运动数据",
+            "type": "object",
+            "properties": {
+                "paths": {
+                    "description": "虚拟路径",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "ext": {
+                    "description": "",
+                    "type": "object",
+                    "additionalProperties": true
+                }
+            },
+            "required": ["paths"]
+        }
+    },
+    "required": ["id", "version", "name"]
+}

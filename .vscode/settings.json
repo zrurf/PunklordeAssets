@@ -1,0 +1,16 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": ["/data/**/index.json"],
+      "url": "./schema/index.schema.json"
+    },
+    {
+      "fileMatch": ["/data/MotionProfile/**/*.motion.json", "!./data/**/index.json"],
+      "url": "./schema/MotionProfile.schema.json"
+    },
+    {
+      "fileMatch": ["/data/VirtualPath/**/*.path.json", "!./data/**/index.json"],
+      "url": "./schema/VirtualPath.schema.json"
+    }
+  ]
+}

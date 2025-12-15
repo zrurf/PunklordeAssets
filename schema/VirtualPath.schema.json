@@ -1,0 +1,50 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "punklorde:schema:virtual_path",
+    "title": "Virtual Path",
+    "description": "虚拟路线数据文件",
+    "type": "object",
+    "properties": {
+        "id": {
+            "description": "路线的唯一ID",
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_:@-]+$"
+        },
+        "version": {
+            "description": "路线的版本",
+            "type": "integer"
+        },
+        "author": {
+            "description": "作者",
+            "type": "string"
+        },
+        "name": {
+            "description": "显示的路线的名称",
+            "type": "string"
+        },
+        "description": {
+            "description": "路线的描述",
+            "type": "string"
+        },
+        "points": {
+            "description": "路线点",
+            "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "lat": {
+                            "type": "number"
+                        },
+                        "lng": {
+                            "type": "number"
+                        },
+                        "alt": {
+                            "type": "number"
+                        }
+                    },
+                "required": ["lat", "lng"]
+            }
+        }
+    },
+    "required": ["id", "version", "name", "points"]
+}
