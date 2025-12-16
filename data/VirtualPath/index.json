@@ -1,7 +1,9 @@
 {
-    "map": {
+    "map": [
+        {
         "id": "cqupt:fenghua@vp1",
         "path": "cqupt/fenghua/vp_1.path.json",
         "name": "风华运动场:虚拟路线1"
-    }
+        }
+    ]
 }
