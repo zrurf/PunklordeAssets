@@ -6,6 +6,10 @@
     "author": "Silver Wolf",
     "repo": ["https://cdn.jsdelivr.net/gh/zrurf/PunklordeAssets/data/"],
     "data": {
-        "paths": ["cqupt:fenghua@vp1"]
+        "paths": ["cqupt:fenghua@vp1"],
+        "ext": {
+            "placeName": "风华运动场",
+            "placeCode": "T1001"
+        }
     }
 }
