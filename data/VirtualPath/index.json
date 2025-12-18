@@ -1,9 +1,19 @@
 {
-    "map": [
-        {
-        "id": "cqupt:fenghua@vp1",
-        "path": "cqupt/fenghua/vp_1.path.json",
-        "name": "风华运动场:虚拟路线1"
-        }
-    ]
+"map": [
+    {
+    "id": "cqupt:fenghua@vp1",
+    "name": "风华运动场:虚拟路线1",
+    "path": "cqupt/fenghua/vp_1.path.json"
+    },
+    {
+    "id": "cqupt:fenghua@vpr1",
+    "name": "风华运动场:跑道1",
+    "path": "cqupt/fenghua/vp_r1.path.json"
+    },
+    {
+    "id": "cqupt:taichi@vpr2",
+    "name": "太极运动场:跑道2",
+    "path": "cqupt/taichi/vp_r2.path.json"
+    }
+]
 }

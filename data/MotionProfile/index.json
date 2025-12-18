@@ -1,9 +1,19 @@
 {
-    "map": [
-        {
-        "id": "cqupt:fenghua@p1",
-        "path": "cqupt/fenghua/preset_1.motion.json",
-        "name": "风华运动场:预设1"
-        }
-    ]
+"map": [
+    {
+    "id": "cqupt:fenghua@p1",
+    "name": "风华运动场:预设1",
+    "path": "cqupt/fenghua/preset_1.motion.json"
+    },
+    {
+    "id": "cqupt:fenghua@rw1",
+    "name": "风华运动场:预设跑道1道",
+    "path": "cqupt/fenghua/runway_1.motion.json"
+    },
+    {
+    "id": "cqupt:taichi@rw2",
+    "name": "太极运动场:预设跑道2道",
+    "path": "cqupt/taichi/runway_2.motion.json"
+    }
+]
 }

@@ -1,0 +1,11 @@
+{
+    "id": "cqupt:taichi@rw2",
+    "name": "太极运动场:预设跑道2道",
+    "version": 1,
+    "description": "重庆邮电大学-太极运动场-预设跑道2道",
+    "author": "Silver Wolf",
+    "repo": ["https://cdn.jsdelivr.net/gh/zrurf/PunklordeAssets/data/"],
+    "data": {
+        "paths": ["cqupt:taichi@vpr2"]
+    }
+}

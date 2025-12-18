@@ -1,0 +1,11 @@
+{
+    "id": "cqupt:fenghua@rw1",
+    "name": "风华运动场:预设跑道1道",
+    "version": 1,
+    "description": "重庆邮电大学-风华运动场-预设跑道1道",
+    "author": "Silver Wolf",
+    "repo": ["https://cdn.jsdelivr.net/gh/zrurf/PunklordeAssets/data/"],
+    "data": {
+        "paths": ["cqupt:fenghua@vpr1"]
+    }
+}
