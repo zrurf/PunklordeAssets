@@ -1,0 +1,22 @@
+{
+  "cqupt": {
+    "name": "重庆邮电大学",
+    "entries": [
+      "cqupt:fenghua@p1",
+      "cqupt:fenghua@rw1",
+      "cqupt:taichi@rw2"
+    ],
+    "categories": [
+      {
+        "id": "fenghua",
+        "name": "风华运动场",
+        "items": [0,1]
+      },
+      {
+        "id": "taichi",
+        "name": "太极运动场",
+        "items": [2]
+      }
+    ]
+  }
+}

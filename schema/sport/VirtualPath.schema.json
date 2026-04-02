@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "punklorde:schema:virtual_path",
+    "$id": "punklorde:schema:sport:virtual_path",
     "title": "Virtual Path",
     "description": "虚拟路线数据文件",
     "type": "object",
@@ -26,6 +26,11 @@
             "description": "路线的描述",
             "type": "string"
         },
+        "coordinate_type": {
+            "description": "坐标系",
+            "type": "string",
+            "enum": ["WGS84", "GCJ02", "BD09"]
+        },
         "points": {
             "description": "路线点",
             "type": "array",
@@ -46,5 +51,5 @@
             }
         }
     },
-    "required": ["id", "version", "name", "points"]
+    "required": ["id", "version", "name", "coordinate_type", "points"]
 }

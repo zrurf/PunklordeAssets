@@ -1,0 +1,54 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "punklorde:schema:calendar:semester",
+    "id": {
+        "description": "学期编号（学期表示法，不是自然年）",
+        "type": "string",
+        "pattern": "^\\d{4}[12]$"
+    },
+    "name": {
+        "description": "学期名称",
+        "type": "string"
+    },
+    "start": {
+        "description": "学期开始时间",
+        "type": "string",
+        "format": "date"
+    },
+    "end": {
+        "description": "学期结束时间",
+        "type": "string",
+        "format": "date"
+    },
+    "week": {
+        "description": "学期周数",
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 53
+    },
+    "events": {
+        "description": "学期事件",
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "start": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "end": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "required": ["id", "start", "name"]
+        }
+    },
+    "required": ["id", "name", "start", "end", "week", "events"]
+}

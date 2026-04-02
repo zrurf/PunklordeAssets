@@ -1,16 +1,28 @@
 {
   "json.schemas": [
     {
-      "fileMatch": ["/data/**/index.json"],
-      "url": "./schema/index.schema.json"
+      "fileMatch": ["/data/Calendar/index.json"],
+      "url": "./schema/calendar/index.schema.json"
+    },
+    {
+      "fileMatch": ["/data/Calendar/**/*.semester.json"],
+      "url": "./schema/calendar/semester.schema.json"
+    },
+    {
+      "fileMatch": ["/data/MotionProfile/**/index.json", "/data/VirtualPath/**/index.json"],
+      "url": "./schema/sport/index.schema.json"
+    },
+    {
+      "fileMatch": ["/data/MotionProfile/**/catalog.json", "/data/VirtualPath/**/catalog.json"],
+      "url": "./schema/sport/catalog.schema.json"
     },
     {
       "fileMatch": ["/data/MotionProfile/**/*.motion.json", "!./data/**/index.json"],
-      "url": "./schema/MotionProfile.schema.json"
+      "url": "./schema/sport/MotionProfile.schema.json"
     },
     {
       "fileMatch": ["/data/VirtualPath/**/*.path.json", "!./data/**/index.json"],
-      "url": "./schema/VirtualPath.schema.json"
+      "url": "./schema/sport/VirtualPath.schema.json"
     }
   ]
 }

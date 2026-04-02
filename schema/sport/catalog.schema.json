@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "punklorde:schema:sport:catalog",
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "entries": {
+        "type": "array",
+        "description": "归属该学校的文件ID",
+        "items": {
+          "type": "string"
+        }
+      },
+      "categories": {
+        "type": "array",
+        "description": "分类",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "items": {
+              "type": "array",
+              "description": "对应entries的索引",
+              "items": {
+                "type": "integer"
+              }
+            }
+          },
+          "required": ["id", "name", "items"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": ["name", "entries", "categories"],
+    "additionalProperties": false
+  }
+}

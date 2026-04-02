@@ -1,0 +1,14 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "punklorde:schema:calendar:index",
+    "current": {
+        "description": "当前学期（学期表示法，不是自然年）",
+        "type": "string",
+        "pattern": "^\\d{4}[12]$"
+    },
+    "name": {
+        "description": "当前学期名称",
+        "type": "string"
+    },
+    "required": ["current", "name"]
+}

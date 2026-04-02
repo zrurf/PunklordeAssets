@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "punklorde:schema:motion_profile",
+    "$id": "punklorde:schema:sport:motion_profile",
     "title": "Motion Profile",
     "description": "用于运动模拟的运动数据文件",
     "type": "object",

@@ -3,7 +3,8 @@
 "name": "风华运动场:跑道1",
 "description": "重庆邮电大学-风华运动场-跑道1",
 "version": 1,
-"author": "Silver Wolf",   
+"author": "Silver Wolf",
+"coordinate_type": "GCJ02",
 "points":[
 {"lat":29.532296549479167,"lng":106.60797173394097},
 {"lat":29.53231662326389,"lng":106.60796956380209},

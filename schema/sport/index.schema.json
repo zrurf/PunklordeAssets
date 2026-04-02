@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "punklorde:schema:motion_profile",
+    "$id": "punklorde:schema:sport:index",
     "map": {
         "type": "array",
         "items": {
